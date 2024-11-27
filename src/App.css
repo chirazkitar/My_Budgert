@@ -1,0 +1,108 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.screen{
+  display:flex;
+}
+.div-1{
+  width: 50%;
+}
+.div-2{
+  width: 50%;
+  padding-right:70px;
+}
+.div-2-2{
+  border: #00000052 solid 1px;
+  border-radius: 10px;
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.img-signup{
+  width: 100%;
+}
+label{
+  float: left;
+  padding-bottom: 5px !important;
+}
+.form-group{
+  margin-bottom: 10px;
+}
+.form-title{
+  margin-bottom: 30px;
+  font-family: "Chewy";
+  color:#7f00cd;
+}
+.btn-signup{
+  background-color: #7f00cd;
+  border-radius: 10px;
+  font-family: "Chewy";
+  color: #ffffff;
+  float: left;
+}
+.signup-p{
+  font-size: 15px;
+  padding-top: 10px;
+}
+.signup-a{
+  color:#7f00cd;
+  cursor: pointer;
+  font-family: "Chewy";
+}
+.img-login{
+  width: 60%;
+}
+.login-div{
+  margin-left: 380px;
+  margin-right:380px;
+}
+.btn-login{
+  background-color: #7f00cd;
+  border-radius: 10px;
+  font-family: "Chewy";
+  color: #ffffff;
+  margin-top: 20px;
+}
+.f{
+  font-family: "Chewy";
+}
