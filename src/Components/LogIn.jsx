@@ -44,7 +44,6 @@ const Login = () => {
       alert("Login failed: " + error.message);
     }
   };
-
   return (
     <div className="login-div">
         <img src="src/assets/logo-light.png" className="img-login"/>

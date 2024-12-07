@@ -9,7 +9,7 @@ import SideBar from './Components/SideBar';
 import Home from './Components/Home';
 import Settings from './Components/settings';
 import Profile from './Components/Profile';
-
+//import ViewExpensesModal from './Components/ViewExpensesModal';
 function App() {
 
 
@@ -17,6 +17,7 @@ function App() {
     <Router>
       <Routes>
         {/* Default Route: Sign Up */}
+        {/*<Route path="/expenses" element={<ViewExpensesModal/>} />*/}
 
         <Route path="/Signup" element={<SignUp />} />
         <Route path="/" element={<Login />} />
