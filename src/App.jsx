@@ -9,24 +9,23 @@ import SideBar from './Components/SideBar';
 import Home from './Components/Home';
 import Settings from './Components/settings';
 import Profile from './Components/Profile';
+
 function App() {
 
 
   return (
     <Router>
-    <Routes>
-      {/* Default Route: Sign Up */}
-      <Route path="/Signup" element={<SignUp />} />
-      <Route path="/" element={<Login />} />
-      <Route path="/sidebar" element={<SideBar />} />
-      <Route path="/Home" element={<Home />} />
-      <Route path="/settings" element={<Settings />} />
-      <Route path="/profile" element={<Profile />} />
+      <Routes>
+        {/* Default Route: Sign Up */}
 
-
-
-    </Routes>
-  </Router>
+        <Route path="/Signup" element={<SignUp />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/sidebar" element={<SideBar />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </Router>
   )
 }
 
