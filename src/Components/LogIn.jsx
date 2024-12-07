@@ -46,6 +46,7 @@ const Login = () => {
   };
 
   return (
+
     <div className="login-div">
         <img src="src/assets/logo-light.png" className="img-login"/>
         <div className="div-2-2">
