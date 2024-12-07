@@ -46,10 +46,6 @@ const Login = () => {
   };
 
   return (
-<<<<<<< HEAD
-=======
-
->>>>>>> bba09ced86969d4a1616c0c04a51b99907817e41
     <div className="login-div">
         <img src="src/assets/logo-light.png" className="img-login"/>
         <div className="div-2-2">
