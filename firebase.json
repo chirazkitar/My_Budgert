@@ -1,0 +1,15 @@
+{
+  "dataconnect": {
+    "source": "dataconnect"
+  },
+  "storage": {
+    "rules": "storage.rules",
+    "cors": [
+      {
+        "origin": ["http://localhost:5173"],
+        "method": ["GET", "POST", "PUT"],
+        "maxAgeSeconds": 3600
+      }
+    ]
+  }
+}
