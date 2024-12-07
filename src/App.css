@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
-
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -48,7 +54,10 @@
 }
 .div-2{
   width: 50%;
-  padding-right:70px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
 }
 .div-2-2{
   border: #00000052 solid 1px;
@@ -70,39 +79,451 @@ label{
 }
 .form-title{
   margin-bottom: 30px;
-  font-family: "Chewy";
   color:#7f00cd;
 }
 .btn-signup{
-  background-color: #7f00cd;
-  border-radius: 10px;
-  font-family: "Chewy";
-  color: #ffffff;
+  border-radius: 15px;
   float: left;
+  padding: 8px 20px;
 }
 .signup-p{
-  font-size: 15px;
+  font-size: 12px;
   padding-top: 10px;
 }
 .signup-a{
   color:#7f00cd;
   cursor: pointer;
-  font-family: "Chewy";
 }
+.signup-a:hover{
+  color:#ded5e5;
+}
+
 .img-login{
   width: 60%;
 }
 .login-div{
-  margin-left: 380px;
-  margin-right:380px;
+  margin-left: 360px;
+  margin-right:360px;
 }
 .btn-login{
-  background-color: #7f00cd;
   border-radius: 10px;
-  font-family: "Chewy";
-  color: #ffffff;
   margin-top: 20px;
+  padding: 5px;
+  width: 100%;
 }
-.f{
-  font-family: "Chewy";
+.btn-light{
+  background-color: #7f00cd;
+  border: #7f00cd ;
+  color: #ffffff;
+  transition: all 0.3s ease;
+
+}
+.btn-light:hover{
+  background-color: #ded5e5;
+  border: #ded5e5 ;
+  color: #7f00cd;
+  transform: translateY(-5px); 
+  
+}
+
+
+/* Sidebar container******************************************* */
+/* Sidebar container */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #ffffff;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: #b8b8b8 solid 1px;
+}
+
+/* Logo container */
+.logo-container {
+  display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 0px;
+    border-bottom: #b8b8b8 solid 1px;
+}
+
+.logo {
+  width: 80%; /* Adjust the logo size */
+  height: auto;
+  object-fit: contain;
+}
+
+/* Menu styling */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.menu li {
+  margin: 20px 0;
+ 
+}
+.sidebar .menu li.active {
+  background-color: #007bff; /* Active background color */
+  color: white; /* Text color for active state */
+}
+.menu img{
+  margin-right: 20px;
+}
+.menu a {
+  color: #787878;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px 20px;
+  display: block;
+  font-family: "Plus Jakarta Sans", sans-serif;
+
+}
+.menu a:hover {
+  background-color: #ded5e5;
+  border-right: #7f00cd 3px solid;
+  color: #7f00cd;
+}
+.menu a:hover .icon{
+  filter: brightness(0) saturate(100%) invert(25%) sepia(85%) saturate(3843%) hue-rotate(269deg) brightness(72%) contrast(140%);
+}
+/*Home************************* */
+.home-header{
+  margin-bottom: 0px !important;
+}
+.container {
+  margin-bottom: 20px;
+  
+  position: absolute; /* Position it relative to the parent container */
+  top: 20px; /* Distance from the top */
+  left: 270px; /* Distance from the left */
+  padding-left: 10px;
+  padding-top: 10px; /* Add padding */
+  text-align: left;
+  width:70%;
+  
+}
+
+/* Content container */
+.content-1 {
+  flex: 1; /* Fill the remaining space after the sidebar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Vertically center the content */
+  height: 85vh; /* Full viewport height */
+  text-align: center;
+  padding: 20px; /* Optional padding for spacing */
+  margin-bottom: 20px;
+
+}
+
+/* Image styling */
+.home-img {
+  width: 40%; /* Adjust as needed */
+  height: auto;
+
+}
+
+/* Text styling */
+.home-text {
+  font-size: 18px;
+  color: #333; /* Optional text color */
+  margin-bottom: 60px;
+}
+.home-text-1{
+  font-size: 30px;
+  color: #333; 
+  display: grid;
+}
+.home-text-1 span{
+  font-size: 16px;
+ 
+}
+.home-text-2-1{
+  font-size: 20px;
+  color: #40c575;
+  width: 100%; 
+  display: grid;
+  padding-right: 100px;
+}
+.home-text-2-1 span, .home-text-2-2 span{
+  font-size: 12px;
+  color: #535353;
+}
+.home-text-2-2{
+  font-size: 20px;
+  color: #e45252;
+  width: 100%; 
+  display: grid;
+  padding-left: 100px;
+}
+.icon-container{
+  display: flex;
+ justify-content: center;
+}
+.icon-container img{
+  margin-right: 5px;
+ 
+}
+/* Button styling */
+.home-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #7f00cd; /* Blue button */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #ded5e5; /* Darker blue on hover */
+}
+.budget-container-1 {
+  margin-bottom: 50px;
+  background-color: #f7f5f8;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.budget-container-1-2{
+  display: flex;
+}
+
+.budget-container-1 h6{
+  margin-bottom: 20px;
+  background-color: #ded5e5;
+  padding: 10px;
+  color: #787878;
+}
+
+.content-2{
+  flex: 1; /* Fill the remaining space after the sidebar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 85vh; /* Full viewport height */
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+
+}
+.expenses-grid{
+  background-color: #40c575;
+  width:100%;
+  margin-bottom: 20px;
+}
+.section-expenses{
+  width: 100%;
+  display: grid;
+  margin-bottom: 20px;
+
+}
+.expense-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Spacing between rows */
+  margin-bottom: 100px;
+}
+.header-container img{
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+}
+.header-container img:hover{
+  transform: scale(1.1);
+  
+}
+.expenses-header{
+  float: left;
+  display: flex;
+  margin-bottom: 20px;
+ 
+}
+.expense-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7f5f8; /* Light background */
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.expense-row.shopping:hover {
+  background-color: #86A1FF; /* Light orange for Shopping */
+  transform: translateY(-5px); 
+
+
+}
+
+.expense-row.restaurant:hover {
+  background-color: #F9FF00; /* Light red for Restaurant */
+  transform: translateY(-5px); 
+
+}
+
+.expense-row.transport:hover {
+  background-color: #000000; /* Light blue for Transport */
+  transform: translateY(-5px); 
+}
+
+
+.expense-icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+  object-fit: cover; /* Ensures the icon fits well */
+  background-color: #e0e0e0; /* Placeholder background */
+  padding: 10px;
+}
+.icon-shopping img{
+  background-color: #D0DAFF;
+}
+.icon-restaurant img{
+  background-color: #FDFFA4 ;
+}
+.expense-details {
+  flex: 1;
+  margin-left: 30px;
+  text-align: left;
+}
+
+.expense-details h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.expense-details p {
+  margin: 5px 0 0;
+  color: #888;
+  font-size: 14px;
+}
+
+.expense-amount {
+  text-align: right;
+}
+
+.expense-amount h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.expense-amount p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #888;
+}
+.spinner{
+  position: absolute;
+  left: 350px;
+  top: 250px;
+  width: 100px;
+}
+/*********settings********/
+.container {
+  position: absolute; /* Position it relative to the parent container */
+  top: 20px; /* Distance from the top */
+  left: 270px; /* Distance from the left */
+  padding-left: 10px;
+  padding-top: 10px; /* Add padding */
+  text-align: left;
+  width:70%;
+  
+}
+.container h4{
+  margin-bottom: 20px;
+  
+}
+.container h5{
+  color: #585858;
+  font-size: 16px;
+  margin-bottom: 10px;
+  
+}
+.budget-settings {
+  display: flex;
+  justify-content: space-between; /* Space between the text and icons */
+  align-items: center; /* Align text and icons vertically */
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: #b8b8b8 solid 1px;
+}
+.settings-text{
+  margin: 0;
+  font-size: 14px;
+  color: #333; /* Optional text color */
+  flex: 1;
+}
+.profile-field{
+  display: block !important;
+  
+}
+.settings-img img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.settings-img img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+.checkbox-theme{
+  display: grid;
+}
+.form-check label{
+  font-size: 14px;
+  color: #333;
+}
+/*******************************/
+/*Profile*/
+.profile-field {
+  display: flex;
+  justify-content: space-between; /* Push icon to the right */
+  align-items: center; /* Vertically center items */
+  padding: 10px 0; /* Add some spacing between fields */
+  border-bottom: 1px solid #ccc; /* Optional: for better separation */
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column; /* Label and value stacked */
+}
+
+.profile-img{
+  cursor: pointer; /* Show a pointer on hover */
+  width: 20px; /* Adjust icon size */
+  height: 20px;
+  margin-left: 10px; /* Optional: space between value and icon */
+  float: right;
+  
+}
+.profile-label{
+  margin-bottom: 10px;
+}
+.profile-value{
+  color: #787878;
+  font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+
 }
