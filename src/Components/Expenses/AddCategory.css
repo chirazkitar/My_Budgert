@@ -1,0 +1,37 @@
+.add-category-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .add-category-container h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .add-category-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-category-container input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-category-container button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-category-container button:hover {
+    background-color: #45a049;
+  }

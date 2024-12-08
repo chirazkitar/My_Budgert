@@ -147,7 +147,6 @@ label{
 .logo-container {
   display: flex;
     align-items: center;
-    padding: 20px;
     padding-left: 0px;
     border-bottom: #b8b8b8 solid 1px;
 }
